@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .left-column {
+    width: 50%;
+    height: 100%; /* Set height to 100% */
+    background-color: #4CAF50; /* Background color for the left column */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-top-left-radius: 10px; /* Round top-left corner */
+    border-bottom-left-radius: 10px; /* Round bottom-left corner */
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+    background-color: white; /* Background color for the logo */
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  .app-name {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .right-column {
+    width: 50%;
+    height: 100%; /* Set height to 100% */
+    padding: 40px;
+    border-top-right-radius: 10px; /* Round top-right corner */
+    border-bottom-right-radius: 10px; /* Round bottom-right corner */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo2 img {
+    width: 80px; /* Reduce logo width */
+    height: 80px; /* Reduce logo height */
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .form-container {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+
+  .form-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .form-field input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+  }
+
+  .form-field i {
+    margin-right: 10px;
+  }
+
+  .signup-button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  .signup-button:hover {
+    background-color: #45a049;
+  }
+
+  .or-divider {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .or-divider hr {
+    width: 40%;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-icons i {
+    font-size: 24px;
+    color: #ccc;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
+  .already-account {
+    text-align: center;
+  }
+
+  .already-account a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="left-column">
+    <div class="logo">
+      <img src="img_1.png" alt="" width="100px" height="100px">
+    </div>
+  </div>
+  <div class="right-column">
+    <div class="logo2"> <!-- Logo added here -->
+      <img src="img_1.png" alt="App Logo">
+    </div>
+    <div class="app-name">Leaf</div> <!-- App name added here -->
+    <div class="form-container">
+      <div class="form-field">
+        <i class="fa fa-user"></i>
+        <input type="text" placeholder="Full Name">
+      </div>
+      <div class="form-field">
+        <i class="fa fa-lock"></i>
+        <input type="password" placeholder="Password">
+      </div>
+      <div class="form-field">
+        <i class="fa fa-envelope"></i>
+        <input type="email" placeholder="Email">
+      </div>
+      <button class="signup-button">Sign Up</button>
+    </div>
+    <div class="or-divider">
+      <hr>
+      <span>-OR-</span>
+      <hr>
+    </div>
+    <div class="social-icons">
+      <i><img src="icons8-facebook-48.png" alt=""></i> <!-- Updated class to 'fab' for Font Awesome Brands -->
+      <i><img src="icons8-apple-30.png" alt=""></i> <!-- Updated class to 'fab' for Font Awesome Brands -->
+      <i ><img src="icons8-google-48.png" alt=""></i> <!-- Updated class to 'fab' for Font Awesome Brands -->
+    </div>
+    <div class="already-account">
+      <p>Already have an account? <a href="#">Log In</a></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
